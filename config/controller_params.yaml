@@ -1,0 +1,12 @@
+wheel_base: 2.700
+max_steer_deg: 35.0
+min_lookahead: 0.75
+max_lookahead: 2.20
+lookahead_gain: 0.80
+speed_kp: 0.90
+speed_ki: 0.04
+speed_kd: 0.02
+goal_dist_tolerance: 0.30
+goal_speed_tolerance: 0.08
+control_rate: 20.0
+pose_timeout: 1.0

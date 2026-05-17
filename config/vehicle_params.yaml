@@ -1,0 +1,11 @@
+# Vehicle dimensions and coordinate convention.
+# All planner/tracker states use rear-axle center as x,y,yaw origin.
+vehicle_length: 4.430     # m, 4430 mm
+vehicle_width: 1.825      # m, 1825 mm
+wheel_base: 2.700         # m, assumed/configurable
+rear_overhang: 0.850      # m, assumed/configurable
+max_steer_deg: 35.0
+
+# General parking slot dimensions.
+parking_slot_width: 2.200   # m
+parking_slot_length: 4.400  # m

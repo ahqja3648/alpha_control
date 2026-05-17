@@ -1,0 +1,13 @@
+std_msgs/Header header
+float64 target_speed
+float64 current_speed
+float64 accel_cmd
+float64 brake_cmd
+float64 steering_rad
+int8 gear
+int32 nearest_index
+int32 target_index
+float64 lookahead_distance
+float64 lateral_error
+float64 heading_error
+bool goal_reached

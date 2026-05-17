@@ -1,0 +1,5 @@
+<launch>
+  <include file="$(find alpha_control)/launch/parking_with_tracker.launch">
+    <arg name="rviz" value="true" />
+  </include>
+</launch>

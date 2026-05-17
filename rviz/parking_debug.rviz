@@ -1,0 +1,72 @@
+Panels:
+  - Class: rviz/Displays
+    Name: Displays
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Class: rviz/Grid
+      Enabled: true
+      Name: Grid
+      Plane: XY
+      Cell Size: 1
+      Plane Cell Count: 30
+      Color: 160; 160; 164
+      Alpha: 0.5
+    - Class: rviz/MarkerArray
+      Enabled: true
+      Name: Static Markers
+      Marker Topic: /hybrid_astar/static_markers
+      Queue Size: 100
+    - Class: rviz/MarkerArray
+      Enabled: true
+      Name: Search Markers
+      Marker Topic: /hybrid_astar/search_markers
+      Queue Size: 100
+    - Class: rviz/Path
+      Enabled: true
+      Name: Partial Path
+      Topic: /hybrid_astar/partial_path
+      Color: 0; 255; 0
+      Line Width: 0.03
+    - Class: rviz/Path
+      Enabled: true
+      Name: Raw Rear-Axle Hybrid A* Path
+      Topic: /hybrid_astar/path_raw
+      Color: 0; 120; 255
+      Line Width: 0.06
+    - Class: rviz/Path
+      Enabled: true
+      Name: Rear-Axle Reference Trajectory
+      Topic: /hybrid_astar/path_ref
+      Color: 255; 255; 0
+      Line Width: 0.05
+    - Class: rviz/MarkerArray
+      Enabled: true
+      Name: Final Markers
+      Marker Topic: /hybrid_astar/final_markers
+      Queue Size: 100
+    - Class: rviz/MarkerArray
+      Enabled: true
+      Name: Tracking Markers
+      Marker Topic: /alpha_control/tracking_markers
+      Queue Size: 100
+  Global Options:
+    Background Color: 48; 48; 48
+    Fixed Frame: map
+    Frame Rate: 30
+  Fixed Frame: map
+  Tools:
+    - Class: rviz/Interact
+    - Class: rviz/MoveCamera
+    - Class: rviz/Select
+  Views:
+    Current:
+      Class: rviz/TopDownOrtho
+      Name: TopDownOrtho
+      Scale: 18
+      X: 5.0
+      Y: 0.5
+      Target Frame: <Fixed Frame>
+Window Geometry:
+  Height: 900
+  Width: 1280
