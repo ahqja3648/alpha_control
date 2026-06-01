@@ -1,9 +1,0 @@
-<launch>
-  <arg name="rviz" default="true" />
-  <rosparam file="$(find alpha_control)/config/vehicle_params.yaml" command="load" />
-  <rosparam file="$(find alpha_control)/config/hybrid_astar_params.yaml" command="load" />
-  <node pkg="alpha_control" type="parking_planner_node.py" name="parking_planner" output="screen">
-    <param name="ref_csv_path" value="/tmp/alpha_control_ref_traj.csv" />
-  </node>
-  <node if="$(arg rviz)" pkg="rviz" type="rviz" name="rviz" args="-d $(find alpha_control)/rviz/parking_debug.rviz" />
-</launch>

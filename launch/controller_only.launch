@@ -1,5 +1,0 @@
-<launch>
-  <rosparam file="$(find alpha_control)/config/vehicle_params.yaml" command="load" />
-  <rosparam file="$(find alpha_control)/config/controller_params.yaml" command="load" />
-  <node pkg="alpha_control" type="path_tracker_node.py" name="path_tracker" output="screen" />
-</launch>
